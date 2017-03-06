@@ -1,0 +1,4 @@
+@import url("file1.css");
+@import url('file0.css');
+
+@import url(dir0/dir0.0/dir0.0-file0.css);

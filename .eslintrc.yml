@@ -1,0 +1,17 @@
+root: true
+
+
+extends:
+  - bsara
+
+parserOptions:
+  sourceType: module
+
+env:
+  node: true
+
+
+
+rules:
+  # Disabled
+  global-require: off

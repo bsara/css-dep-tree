@@ -1,6 +1,6 @@
 {
   "name": "css-dep-tree",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Generates a CSS dependency tree and dependency file/URL lists based on CSS imports",
   "license": "ISC",
   "authors": [

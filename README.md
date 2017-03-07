@@ -9,6 +9,9 @@
 
 
 
+<br/>
+<br/>
+
 
 
 # Install
@@ -22,6 +25,11 @@ $ npm install --save css-dep-tree
 ```bash
 $ npm install -g css-dep-tree
 ```
+
+
+
+<br/>
+<br/>
 
 
 
@@ -79,6 +87,10 @@ $ cssdt -h
 
 
 
+<br/>
+<br/>
+
+
 
 # API
 
@@ -89,13 +101,21 @@ Builds a dependency tree and lists of all file and URL dependencies.
 
 ### Parameters
 
-- **filePath** `String` - Path to entry CSS file.
-- **options** `Object` or `Function` - Operation options. *(If `options` is a `Function`, then it is assumed to be the `callback` parameter).*
-  - **relative** `Boolean` - If `true`, all file paths in results are expressed relative to the current directory. *(Default: `false`)*
-  - **excludeTree** `Boolean` - If `true`, full dependency tree object is excluded from results. *(Default: `false`)*
-  - **excludeFiles** `Boolean` - If `true`, all file dependency paths are excluded from results. *(Default: `false`)*
-  - **excludeURLs** `Boolean` - If `true`, all URL dependency paths are excluded from results. *(Default: `false`)*
-- **callback(err, results)** `Function` - Callback function to execute when operation has completed.
+- **filePath** `String`<br/>
+  Path to entry CSS file.
+
+- **options** `Object` or `Function`<br/>Operation options. *(If `options` is a `Function`, then it is assumed to be the `callback` parameter).*
+  - **relative** `Boolean` *(Default: `false`)*<br/>
+    If `true`, all file paths in results are expressed relative to the current directory.
+  - **excludeTree** `Boolean` *(Default: `false`)*<br/>
+    If `true`, full dependency tree object is excluded from results.
+  - **excludeFiles** `Boolean` *(Default: `false`)*<br/>
+    If `true`, all file dependency paths are excluded from results.
+  - **excludeURLs** `Boolean` *(Default: `false`)*<br/>
+    If `true`, all URL dependency paths are excluded from results.
+
+- **callback(err, results)** `Function`<br/>
+  Callback function to execute when operation has completed.
 
 ### Return Value
 
@@ -106,9 +126,14 @@ The `Object` returned by the `callback` function parameter and `Promise` resolve
 has three properties:
 
 
-- **tree** `Object` - Represents the full dependency tree. *(Not present if `options.excludeTree` is `true`)*
-- **urls** `String[]` - Contains all dependency URL paths found in the dependency tree. *(Not present if `options.excludeFiles` is `true`)*
-- **files** `String[]` - Contains all dependency file paths found in the dependency tree. *(Not present if `options.excludeURLs` is `true`)*
+- **tree** `Object`<br/>
+  Represents the full dependency tree. *(Not present if `options.excludeTree` is `true`)*
+
+- **urls** `String[]`<br/>
+  Contains all dependency URL paths found in the dependency tree. *(Not present if `options.excludeFiles` is `true`)*
+
+- **files** `String[]`<br/>
+  Contains all dependency file paths found in the dependency tree. *(Not present if `options.excludeURLs` is `true`)*
 
 
 > **NOTE:** Each unique URL and file path will appear only once in the `urls` & `files`
@@ -158,6 +183,9 @@ lists, regardless of how many times it appears ion the dependency tree.
 ```
 
 
+<br/>
+<br/>
+
 
 ## cssDepTree.files(filePath, [relative], [callback])
 
@@ -166,10 +194,15 @@ Builds a flat list of all file dependencies found in the dependency tree.
 
 ### Parameters
 
-- **filePath** `String` - Path to entry CSS file.
-- **relative** `Boolean` or `Function` - If `true`, all file paths in results are expressed relative to the current directory. *(Default: `false`)*
-                                         *(If `relative` is a `Function`, then it is assumed to be the `callback` parameter).*
-- **callback(err, results)** `Function` - Callback function to execute when operation has completed.
+- **filePath** `String`<br/>
+  Path to entry CSS file.
+
+- **relative** `Boolean` or `Function` *(Default: `false`)*<br/>
+  If `true`, all file paths in results are expressed relative to the current directory.
+  *(If `relative` is a `Function`, then it is assumed to be the `callback` parameter).*
+
+- **callback(err, results)** `Function`<br/>
+  Callback function to execute when operation has completed.
 
 
 ### Return Value
@@ -180,6 +213,9 @@ Builds a flat list of all file dependencies found in the dependency tree.
 regardless of how many times it appears ion the dependency tree.
 
 
+<br/>
+<br/>
+
 
 ## cssDepTree.urls(filePath, [relative], [callback])
 
@@ -188,10 +224,15 @@ Builds a flat list of all URL dependencies found in the dependency tree.
 
 ### Parameters
 
-- **filePath** `String` - Path to entry CSS file.
-- **relative** `Boolean` or `Function` - If `true`, all file paths in results are expressed relative to the current directory. *(Default: `false`)*
-                                         *(If `relative` is a `Function`, then it is assumed to be the `callback` parameter).*
-- **callback(err, results)** `Function` - Callback function to execute when operation has completed.
+- **filePath** `String`<br/>
+  Path to entry CSS file.
+
+- **relative** `Boolean` or `Function` *(Default: `false`)*<br/>
+  If `true`, all file paths in results are expressed relative to the current directory.
+  *(If `relative` is a `Function`, then it is assumed to be the `callback` parameter).*
+
+- **callback(err, results)** `Function`<br/>
+  Callback function to execute when operation has completed.
 
 
 ### Return Value
@@ -202,6 +243,11 @@ Builds a flat list of all URL dependencies found in the dependency tree.
 of how many times it appears ion the dependency tree.
 
 
+
+
+<br/>
+<br/>
+<br/>
 
 
 

@@ -27,7 +27,6 @@ const HELP_OPTION  = chalk.green;
 
 commander
   .version(pkg.version)
-  .usage("<cssFile> [options]")
 
   .option("-r --relative", "")
 

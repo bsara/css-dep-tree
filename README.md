@@ -67,7 +67,7 @@ cssDepTree('main.css', (err, results) => {
 $ cssdt -h
 
   Usage:
-    [cssdt|cssdeptree] <cssFile> [options]
+    (cssdt|cssdeptree) <cssFile> [options]
 
   Options:
     -r  --relative       Output files paths relative to current directory

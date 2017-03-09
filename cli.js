@@ -45,7 +45,7 @@ commander.helpInformation = () => `
     ${pkg.description}.
 
   ${HELP_HEADING("Usage:")}
-    [cssdt|cssdeptree] <${HELP_ARG("cssFile")}> [${HELP_OPTION("options")}]
+    (cssdt|cssdeptree) <${HELP_ARG("cssFile")}> [${HELP_OPTION("options")}]
 
   ${HELP_HEADING("Options:")}
     ${HELP_OPTION("-r")}  ${HELP_OPTION("--relative")}       ${HELP_DESC("Output files paths relative to current directory")}

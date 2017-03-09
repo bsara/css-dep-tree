@@ -72,7 +72,7 @@ commander.parse(process.argv);
 //---------------------------------------------------------------
 
 if (commander.args.length !== 1) {
-  console.error("Invalid number of arguments given! Expecting only one CSS file path!");
+  console.error(chalk.red("ERROR: Invalid number of arguments given! Expecting only one CSS file path!"));
   commander.help();
 }
 

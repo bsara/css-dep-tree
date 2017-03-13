@@ -1,7 +1,7 @@
 /**
  * @callback apiCallback
- * @param {(String|Error)} err     - TODO: Add description
- * @param {(Object)        results - TODO: Add description
+ * @param {?(String|Error)} err     - TODO: Add description
+ * @param {Object}          results - TODO: Add description
  */
 
 
@@ -154,7 +154,7 @@ function _findImports(filePath, relative, excludeTree, allFilePaths, allURLs) {
       }
 
       _processFileContent(path.dirname(filePath), fileContent, relative, excludeTree, allFilePaths, allURLs)
-        .then((treeNode) => resolve((treeNode == null) ? undefined : { [filePath]: treeNode }))
+        .then((treeNode) => resolve({ [filePath]: treeNode }))
         .catch(reject);
     });
   });

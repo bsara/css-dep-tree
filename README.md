@@ -5,7 +5,7 @@
 > Generates a CSS dependency tree and dependency file/URL lists based on CSS imports
 
 
-[Changelog](https://github.com/bsara/repos/css-dep-tree/blob/master/CHANGELOG.md)
+[Changelog](https://github.com/bsara/css-dep-tree/blob/master/CHANGELOG.md)
 
 
 
